@@ -8,7 +8,7 @@
  * @param mixed $op2 El segundo operando.
  * @param string $op El operador 
  *                   (valores válidos: '+', '-', '*', '/').
- * @return mixed
+ * @return mixed El resultado del cálculo.
  */
 function calcular_resultados($op1, $op2, $op){
 
