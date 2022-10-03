@@ -10,30 +10,35 @@
 
 <body>
     <?php
+
     $primer_op = trim($_GET['primero']);
     $segudo_op = trim($_GET['segundo']);
     $operacion = $_GET['operacion'];
 
-    function calcular_resultados($primer_op, $segudo_op, $operacion){
+    function calcular_resultados($op1, $op2, $op){
 
-    switch ($operacion):
+    switch ($op):
         case "+":
-            $res = $primer_op + $segudo_op;
+            $resul = $op1 + $op2;
             break;
         case "-":
-            $res = $primer_op - $segudo_op;
+            $resul = $op1 - $op2;
             break;
         case "*":
-            $res = $primer_op * $segudo_op;
+            $resul = $op1 * $op2;
             break;
         case "/":
-            $res = $primer_op / $segudo_op;
+            $resul = $op1 / $op2;
             break;
         default:
-            $res = "Error.";
+            $resul = "Error.";
     endswitch;
+    
+    return $resul;
 
     }
+
+    $res = calcular_resultados($primer_op, $segudo_op, $operacion);
 
     ?>
 
