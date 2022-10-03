@@ -11,32 +11,14 @@
 <body>
     <?php
 
+    /* Para incluir el archivo auxiliar podemos usar: 
+    ** require // require_once // include // include_once */
+
+    require 'auxiliar.php';
+
     $primer_op = trim($_GET['primero']);
     $segudo_op = trim($_GET['segundo']);
     $operacion = $_GET['operacion'];
-
-    function calcular_resultados($op1, $op2, $op){
-
-    switch ($op):
-        case "+":
-            $resul = $op1 + $op2;
-            break;
-        case "-":
-            $resul = $op1 - $op2;
-            break;
-        case "*":
-            $resul = $op1 * $op2;
-            break;
-        case "/":
-            $resul = $op1 / $op2;
-            break;
-        default:
-            $resul = "Error.";
-    endswitch;
-    
-    return $resul;
-
-    }
 
     $res = calcular_resultados($primer_op, $segudo_op, $operacion);
 
