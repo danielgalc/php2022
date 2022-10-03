@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Daniel Gallego Calderón
+ * @copyright Copyright (c) 2022 Daniel Gallego Calderón
+ * @license https://www.gnu.org/licenses/gpl.txt
+ */
 
 /**
  * Calcula el resultado de hacer la operación de $oper
