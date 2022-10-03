@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * Calcula el resultado de hacer la operación de $oper
+ * sobre los argumentos $op1 y $op2.
+ * 
+ * @param mixed $op1 El primer operando.
+ * @param mixed $op2 El segundo operando.
+ * @param string $op El operador 
+ *                   (valores válidos: '+', '-', '*', '/').
+ * @return mixed
+ */
 function calcular_resultados($op1, $op2, $op){
 
     switch ($op):
