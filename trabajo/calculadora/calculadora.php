@@ -14,8 +14,7 @@
     $segudo_op = trim($_GET['segundo']);
     $operacion = $_GET['operacion'];
 
-
-    $res;
+    function calcular_resultados($primer_op, $segudo_op, $operacion){
 
     switch ($operacion):
         case "+":
@@ -33,6 +32,9 @@
         default:
             $res = "Error.";
     endswitch;
+
+    }
+
     ?>
 
     <p>El resultado de <?= $primer_op ?> <?= $operacion ?> <?= $segudo_op ?> es <?= $res ?></p>
