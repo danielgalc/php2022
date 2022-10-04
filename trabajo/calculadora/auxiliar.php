@@ -1,39 +1,42 @@
 <?php
 /**
- * @author Daniel Gallego Calderón
- * @copyright Copyright (c) 2022 Daniel Gallego Calderón
+ * @author Ricardo Pérez López
+ * @copyright Copyright (c) 2022 Ricardo Pérez López
  * @license https://www.gnu.org/licenses/gpl.txt
  */
 
 /**
- * Calcula el resultado de hacer la operación de $oper
- * sobre los argumentos $op1 y $op2.
- * 
- * @param mixed $op1 El primer operando.
- * @param mixed $op2 El segundo operando.
- * @param string $op El operador 
- *                   (valores válidos: '+', '-', '*', '/').
- * @return mixed El resultado del cálculo.
+ * Calcula el resultado de hacer la operación de $oper sobre
+ * los argumentos $oper1 y $oper2.
+ *
+ * @param  mixed  $oper1 El primer operando.
+ * @param  mixed  $oper2 El segundo operando.
+ * @param  string $oper  El operador
+ *                       (valores válidos: '+', '-', '*', '/').
+ * @return mixed         El resultado del cálculo.
  */
-function calcular_resultados($op1, $op2, $op){
+function calcular_resultado($oper1, $oper2, $oper)
+{
+    switch ($oper) {
+        case '+':
+            $resul = $oper1 + $oper2;
+            break;
 
-    switch ($op):
-        case "+":
-            $resul = $op1 + $op2;
+        case '-':
+            $resul = $oper1 - $oper2;
             break;
-        case "-":
-            $resul = $op1 - $op2;
+
+        case '*':
+            $resul = $oper1 * $oper2;
             break;
-        case "*":
-            $resul = $op1 * $op2;
+
+        case '/':
+            $resul = $oper1 / $oper2;
             break;
-        case "/":
-            $resul = $op1 / $op2;
-            break;
+
         default:
-            $resul = "Error.";
-    endswitch;
-    
-    return $resul;
-
+            $resul = 'Error: operación incorrecta.';
     }
+
+    return $resul;
+}

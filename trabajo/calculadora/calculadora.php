@@ -10,23 +10,16 @@
 
 <body>
     <?php
-
-    /* Para incluir el archivo auxiliar podemos usar: 
-    ** require // require_once // include // include_once */
-
     require 'auxiliar.php';
 
-    $primer_op = trim($_GET['primero']);
-    $segudo_op = trim($_GET['segundo']);
-    $operacion = $_GET['operacion'];
-
-    $res = calcular_resultados($primer_op, $segudo_op, $operacion);
-
+    $op1 = trim($_GET['op1']);
+    $op2 = trim($_GET['op2']);
+    $op = trim($_GET['op']);
+    $res = calcular_resultado($op1, $op2, $op);
     ?>
-
-    <p>El resultado de <?= $primer_op ?> <?= $operacion ?> <?= $segudo_op ?> es <?= $res ?></p>
-
-    <a href="calculadora.html">Volver</a>
+    <p>
+        El resultado de <?= "$op1 $op $op2" ?> es <?= $res ?>.
+    </p>
 </body>
 
 </html>

@@ -1,11 +1,17 @@
 <?php
+/**
+ * adjklsdfjklsdfjlsjdkfds
+ * sdfkljsklfjslksd
+ * sdfkljsdlfkdjsklsdfkljsdf
+ *
+ */
 
-# Comentario de una sola línea
 
-/* Comentario de
-varias líneas */ 
+/*
+klfjklsdfjklsjfklsjfs
+sdfkljsfkljskldfjs
+sdfdklsjfklsjlfks
+*/
 
-/** Comentario de documentación */
-
-echo "Hola";
-
+# klsdjfklsjdfklsjdfklsklfd
+echo "Hola";  # Esto es un comentario

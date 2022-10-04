@@ -7,20 +7,14 @@
     <title>Datos del cliente</title>
 </head>
 <body>
-   <?php
-   $dni = trim($_GET['dni']); 
-   $nombre = trim($_GET['nombre']); 
-   ?>
-
+    <?php
+    $dni = trim($_GET['dni']);
+    $nombre = trim($_GET['nombre']);
+    ?>
     <ul>
-        <li>
-            DNI: <?=$dni /* $_POST['dni'] // $_GET['dni']*/  ?>
-        </li>
-        <li>
-            Nombre: <?=$nombre /* $_POST['nombre'] // $_GET['nombre']; */ ?>
-        </li> 
+        <li>DNI: <?= $dni ?></li>
+        <li>Nombre: <?= $nombre ?></li>
     </ul>
-
     <a href="formulario.html">Volver</a>
 </body>
 </html>

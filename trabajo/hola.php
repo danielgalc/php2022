@@ -2,7 +2,7 @@ Antes del primer bloque
 <?php
 echo 2 * 5;
 ?>
-Entre el primer bloque
+Entre el primero y el segundo
 <?php
 echo "hola hola\n";
 echo "Segunda línea del bloque PHP\n";

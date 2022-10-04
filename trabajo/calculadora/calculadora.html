@@ -8,24 +8,24 @@
 </head>
 <body>
     <form action="calculadora.php" method="get">
-        <label>
-            Primer operando:
-            <input type="text" name="primero">
-        </label>
-        <label>
-            Segundo operando:
-            <input type="text" name="segundo">
-        </label>
-        <label>
-            Operación
-            <select name="operacion">
-                <option value="+">Suma</option>
-                <option value="-">Resta</option>
-                <option value="*">Multiplicación</option>
-                <option value="/">División</option>
-            </select>
-        </label>
-
+        <div>
+            <label>
+                Primer operando:
+                <input type="text" name="op1">
+            </label>
+        </div>
+        <div>
+            <label>
+                Segundo operando:
+                <input type="text" name="op2">
+            </label>
+        </div>
+        <div>
+            <label>
+                Operación:
+                <input type="text" name="op">
+            </label>
+        </div>
         <button type="submit">Calcular</button>
     </form>
 </body>
