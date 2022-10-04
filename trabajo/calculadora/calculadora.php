@@ -15,11 +15,14 @@
     $op1 = trim($_GET['op1']);
     $op2 = trim($_GET['op2']);
     $op = trim($_GET['op']);
-    $res = calcular_resultado($op1, $op2, $op);
-    ?>
-    <p>
-        El resultado de <?= "$op1 $op $op2" ?> es <?= $res ?>.
-    </p>
-</body>
+    $error = [];
+    $res = calcular_resultado($op1, $op2, $op, $error);
 
+    if (empty($error)) {
+        mostrar_resultado($op1, $op2, $op, $res);
+    } else {
+        mostrar_errores($error);
+    }
+    ?>
+</body>
 </html>
