@@ -19,5 +19,7 @@
     ?>
 
     <p>La distancia Hamming entre <?= $cad1 ?> y <?= $cad2 ?> es <?= $distancia ?></p>
+
+    <a href="hamming.html">Volver</a>
 </body>
 </html>
