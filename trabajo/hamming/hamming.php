@@ -8,11 +8,16 @@
 </head>
 <body>
     <?php
-    
-    $primera_cadena = $_GET['primera_cad'];
-    $segunda_cadena = $_GET['segunda_cad'];
-    
-    
+
+    require 'auxiliar.php';
+
+    $cad1 = trim($_GET['primera_cadena']);
+    $cad2 = trim($_GET['segunda_cadena']);
+
+    $distancia = hamming($cad1, $cad2);
+
     ?>
+
+    <p>La distancia Hamming entre <?= $cad1 ?> y <?= $cad2 ?> es <?= $distancia ?></p>
 </body>
 </html>
