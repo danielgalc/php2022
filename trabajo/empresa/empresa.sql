@@ -14,4 +14,4 @@ INSERT INTO departamentos (codigo, denominacion)
            (20, 'Administrativo'),
            (30, 'Prevención'),
            (40, 'Laboratorio'),
-           (50, 'Automoción')
+           (50, 'Automoción');
